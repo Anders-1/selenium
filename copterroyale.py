@@ -8,8 +8,8 @@ chrome_options = Options()
 # chrome_options.add_argument("--disable-extensions")
 # chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--start-maximized")
-chrome_options.add_argument(r"--user-data-dir=C:/Users/ahpye/AppData/Local/Google/Chrome/User Data/") #e.g. C:\Users\You\AppData\Local\Google\Chrome\User Data
-chrome_options.add_argument(r'--profile-directory=Profile 1') #e.g. Profile 3
+# chrome_options.add_argument(r"--user-data-dir=C:/Users/ahpye/AppData/Local/Google/Chrome/User Data/") #e.g. C:\Users\You\AppData\Local\Google\Chrome\User Data
+# chrome_options.add_argument(r'--profile-directory=Profile 1') #e.g. Profile 3
 # chrome_options.add_argument("--headless")
 import time
 import clipboard
@@ -45,11 +45,11 @@ def newName():
 def getName():
 
 
-    actions.move_by_offset(465, 430).click_and_hold().move_by_offset(170,0).release().perform()
+    actions.move_by_offset(500, 430).click_and_hold().move_by_offset(170,0).release().perform()
 
     root.send_keys(Keys.LEFT_CONTROL, 'C')
 
-    actions.move_by_offset(-635, -430).click().perform()
+    actions.move_by_offset(-670, -430).click().perform()
 
     print(clipboard.paste())
 
